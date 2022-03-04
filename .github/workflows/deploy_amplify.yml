@@ -35,7 +35,9 @@ jobs:
         run: bash ./.github/workflows/amplify_init.sh
 
       - name: Push Amplify project to AWS
-        run: bash ./.github/worfklows/amplify_push.sh
+        run: |
+          bash ./.github/worfklows/amplify_push.sh
+          amplify codegen
 
 
       
