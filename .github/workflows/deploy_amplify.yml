@@ -1,13 +1,13 @@
 name: "Deploy Amplify"
 on:
   workflow_dispatch:
-    inputs:
-      git_ref:
-        description: "Git ref"
-        required: true
-      image_tag:
-        description: "Image tag"
-        required: true
+    # inputs:
+    #   git_ref:
+    #     description: "Git ref"
+    #     required: true
+    #   image_tag:
+    #     description: "Image tag"
+    #     required: true
 
 jobs:
   deploy_amplify:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Push Amplify project to AWS
         run: bash ./.github/worfklows/amplify_push.sh
-        
+
 
       
