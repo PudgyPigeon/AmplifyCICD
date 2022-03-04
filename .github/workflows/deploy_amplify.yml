@@ -32,8 +32,10 @@ jobs:
         run: amplify -v
       
       - name: Initialize/Configure AWS Amplify CLI
-        run: |
-            amplify init --yes \
-            --amplify 
+        run: bash ./.github/workflows/amplify_init.sh
+
+      - name: Push Amplify project to AWS
+        run: bash ./.github/worfklows/amplify_push.sh
+        
 
       

@@ -10,6 +10,6 @@ AMPLIFY="{\
 
 amplify init \
 —- amplify $AMPLIFY \
--- frontend $FRONTEND \
--- providers $PROVIDERS \
+#-- frontend $FRONTEND \
+#-- providers $PROVIDERS \
 -- yes
