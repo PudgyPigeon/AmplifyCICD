@@ -31,7 +31,7 @@ jobs:
       - name: Confirm Amplify installed and check version   
         run: amplify -v
       
-      - name: Configure AWS Amplify CLI
+      - name: Initialize/Configure AWS Amplify CLI
         run: |
             amplify init --yes \
             --amplify 
